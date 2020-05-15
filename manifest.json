@@ -6,14 +6,15 @@
         "default_popup": "html/index.html"
     },
     "permissions": [
-        "tabs",
-        "https://nhentai.net/favorites/*"
+        "https://nhentai.net/favorites/*",
+        "storage"
     ],
     "author": "Xwilarg",
     "content_scripts": [{
         "matches": [
             "https://nhentai.net/favorites/*"
         ],
+        "css": ["css/style.css"],
         "js": ["js/content.js"]
     }],
     "manifest_version": 2
