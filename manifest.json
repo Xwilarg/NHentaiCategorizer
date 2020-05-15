@@ -1,0 +1,20 @@
+{
+    "name": "NHentai Categorizer",
+    "version": "0.0.1",
+    "description": "Order your NHentai favorites inside categories",
+    "browser_action": {
+        "default_popup": "html/index.html"
+    },
+    "permissions": [
+        "tabs",
+        "https://nhentai.net/favorites/*"
+    ],
+    "author": "Xwilarg",
+    "content_scripts": [{
+        "matches": [
+            "https://nhentai.net/favorites/*"
+        ],
+        "js": ["js/content.js"]
+    }],
+    "manifest_version": 2
+}
